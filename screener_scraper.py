@@ -205,13 +205,10 @@ def  process(data):
 
         print(f"\nNumber of valid url entered : {number_of_links}")
         print(f"\nTotal processed url : {len(data_a)}")
-        print(f"\nurl with no data available :")
         print(f'\nNumber of invalid url : {len(data_b)}')
         for url in data_b:
             print (url)
-        print("\nDone .. ")
-        print("="*20)
-        print(f"\nfile is saves with the name out_{dt_string}.xlsx")
+        print(f"\n\nFile is saves with the name out_{dt_string}.xlsx")
     else:
         print("\nNone of the urls have the data available !!")
 
