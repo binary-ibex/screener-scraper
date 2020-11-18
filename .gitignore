@@ -1,3 +1,4 @@
 *.xlsx
 /env
 data.txt
+env/
