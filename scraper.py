@@ -73,8 +73,6 @@ def fetch_data(data, data_available, data_not_available):
     data_file_0 = pandas.DataFrame()
 
     for current_url in data_links:
-        #flag to stop further reading of the first attribute row
-        flag = 0
         
         page = bs(requests.get(current_url).content, 'html.parser')
 
