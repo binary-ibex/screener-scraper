@@ -1,17 +1,3 @@
-
-# paste the link in between  triple quotes 
-# in case of multiple links put each link on the new line
-
-data = """
-
-https://www.screener.in/screens/264909/Coffee-Can-Strategy-for-Long-Term/
-
-
-"""
-
-
-
-
 #importing required module -------------------------------------------------------------
 
 import requests 
@@ -214,4 +200,6 @@ def  process(data):
 
 
 #RUN the program  
-process(data)
+if __name__=='__main__':
+    data = ''
+    process(data)
