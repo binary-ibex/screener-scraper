@@ -19,14 +19,14 @@ python3 scraper.py
 ```
 paste the link 
 
-![Enter prompt]()
+![Enter prompt](images/enter_prompt.png)
 
 output shows number of valid and invalid link. Here invalid links are the one which script unable to process. Script will also print list of invalid links in the terminal. 
 
 
-![output]()
+![output](images/output.png)
 
-After fetching data, output file is stored in the format out_datatime.xlsx in same directory form wher you run the script. 
+After fetching data, output file is stored in the format out_datatime.xlsx in same directory form where you run the script. 
 
 ### Multiple link 
 
