@@ -1,5 +1,6 @@
 # screener-scraper
-python script to scrape the screener.in website
+
+python script to scrape the screener.in website and save the data in the excel file format. 
 
 
 installation 
