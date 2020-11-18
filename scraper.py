@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup as bs
 import re 
 import pandas
 from datetime import datetime
+import argparse
 
 dt_string = datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p")
 
@@ -199,6 +200,12 @@ def  process(data):
 
 #RUN the program  
 if __name__=='__main__':
-    with open('data.txt', 'r') as fd:
-        data = fd.read()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-f", "--file", help="flag to specify the links are put in data.txt file", action="store_true")
+    args = parser.parse_args()
+    if args.file:
+        with open('data.txt', 'r') as fd:
+            data = fd.read()
+    else:
+        data = input("Enter the link => ")
     process(data)
