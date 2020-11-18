@@ -191,8 +191,10 @@ def  process(data):
         print(f"\nNumber of valid url entered : {number_of_links}")
         print(f"\nTotal processed url : {len(data_a)}")
         print(f'\nNumber of invalid url : {len(data_b)}')
-        for url in data_b:
-            print (url)
+        if data_b:
+            print("\n Invalid url list : ")
+            for url in data_b:
+                print (url)
         print(f"\n\nFile is saves with the name out_{dt_string}.xlsx")
     else:
         print("\nNone of the urls have the data available !!")
