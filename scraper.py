@@ -199,5 +199,6 @@ def  process(data):
 
 #RUN the program  
 if __name__=='__main__':
-    data = ''
+    with open('data.txt', 'r') as fd:
+        data = fd.read()
     process(data)
