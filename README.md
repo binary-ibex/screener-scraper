@@ -32,7 +32,7 @@ After fetching data, output file is stored in the format out_datatime.xlsx in sa
 
 process is same, but only this time make the text file with name data.txt in the same folder as you scraper script and put each link on the new line as show in the image below. After that save the file 
 
-![file image]()
+![file image](images/multilink.png)
 
 Now run the command 
 
