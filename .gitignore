@@ -2,3 +2,6 @@
 /env
 data.txt
 env/
+*.xlsx*
+*.pyc
+__pycache__
