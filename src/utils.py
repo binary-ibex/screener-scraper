@@ -45,6 +45,6 @@ def generate_excel(links):
         url_col = _output_df.pop('URL')
         _output_df.insert(len(_output_df.columns), 'URL', url_col)
         _output_df.to_excel(f"output/out_{DT_STRING}.xlsx", index=None)
-        print(f"\n\n[+] File is saves with the name out_{DT_STRING}.xlsx")
+        print(f"[+] File is saves with the name out_{DT_STRING}.xlsx")
     else:
-        print("\n [+] Unable to extract the data for the given links")
+        print("[+] Unable to extract the data for the given links")
