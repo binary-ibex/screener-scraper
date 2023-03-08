@@ -42,7 +42,9 @@ def generate_excel(links):
     for link in links:
         _output_df = pd.concat([_output_df, fetch_data(link)], axis=0)
     if not _output_df.empty:
-        _output_df.to_excel(f"output/out_{DT_STRING}.xlsx")
+        url_col = _output_df.pop('URL')
+        _output_df.insert(len(_output_df.columns), 'URL', url_col)
+        _output_df.to_excel(f"output/out_{DT_STRING}.xlsx", index=None)
         print(f"\n\n[+] File is saves with the name out_{DT_STRING}.xlsx")
     else:
         print("\n [+] Unable to extract the data for the given links")
